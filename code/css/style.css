@@ -33,8 +33,6 @@ button{
     position: fixed; top: 0; left: 0;
 }
 
-
-
 .homepagetekst{
     margin-left: 400px;
     margin-right: 150px;
@@ -47,13 +45,6 @@ button{
     height: 100vh;
     background-color: #5E66CB;
     position: relative;
-}
-
-.geschiedenis{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .items{
@@ -78,4 +69,8 @@ button{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image: url("img/geschiedenisbackground.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom left;
 }
