@@ -5,12 +5,13 @@
 
 }
 
-body{
+.home{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("img/image1.jpeg");
+    background-image: url("img/homepagebackground.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -34,7 +35,7 @@ button{
 
 
 
-h1{
+.homepagetekst{
     margin-left: 400px;
     margin-right: 150px;
     margin-bottom: 100px;
@@ -45,6 +46,14 @@ h1{
     width: 250px;
     height: 100vh;
     background-color: #5E66CB;
+    position: relative;
+}
+
+.geschiedenis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .items{
@@ -62,4 +71,11 @@ h1{
 
 .ItemTekst{
     font-size: 40px;
+}
+
+.geschiedenis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
