@@ -39,6 +39,10 @@ button{
     position: fixed; top: 0; left: 0;
 }
 
+.logo:hover{
+    cursor: pointer;
+}
+
 .menu{
     position: sticky;
     top: 0;
@@ -48,7 +52,7 @@ button{
     height: 100px;
 }
 
-.menu a{
+.menu :not(a.logo){
     height: 65px;
     float: right;
     color: white;
@@ -62,6 +66,10 @@ button{
 
 .menu a:hover{
     background-color: #343a99;
+}
+
+.menu :not(a.item){
+    background-color: #5E66CB; 
 }
 
 button:hover{
