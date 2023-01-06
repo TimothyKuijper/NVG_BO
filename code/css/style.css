@@ -32,9 +32,10 @@ button{
 }
 
 .logo{
-    margin: 10px;
-    height: 75px;
-    width: 125px;
+    padding: 5px;
+    padding-left: 10px;
+    height: 90px;
+    width: 140px;
     display: flex;
     position: fixed; top: 0; left: 0;
 }
@@ -52,7 +53,7 @@ button{
     height: 100px;
 }
 
-.menu :not(a.logo){
+.menu :not(.logo){
     height: 65px;
     float: right;
     color: white;
@@ -92,4 +93,13 @@ button:hover{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: bottom left;
+}
+
+.geschiedenis_title{
+    color: white;
+}
+
+.geschiedenis_txt{
+    margin: 200px;
+    color: white;
 }
