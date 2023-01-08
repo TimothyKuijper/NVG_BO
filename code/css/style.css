@@ -185,7 +185,7 @@ button:hover{
     background-image: url(img/tickets_background.png);
     background-repeat: no-repeat;
     background-position: center;
-    object-fit: cover;
+    background-size:  cover;
 }
 
 .tickets-box{
