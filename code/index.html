@@ -5,50 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="app.js" defer></script>
+    <script src="app/app.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="css/img/favicon-32x32.png">
     <title>Nationaal Videogame Museum</title>
 </head>
 <body>
 
-    <a href="http://127.0.0.1:5500/index.html">
-        <button>
-            <img src="css/img/Nationaal_Videogame_Museum_logo.png" alt="logo van het Nationaal video game Museum" class="logo">
-        </button>
-    </a>
+    <!-- menu bar -->
+    <div class="menu">
+        <a href="http://127.0.0.1:5500/index.html"  class="logo">
+            <button>
+                <img src="css/img/Nationaal_Videogame_Museum_logo.png" alt="logo van het Nationaal video game Museum" class="logo">
+            </button>
+        </a>
+        <a class="item" href="#">reviews</a>
+        <a class="item" href="#geschiedenis-page">geschiedenis</a>
+        <a class="item" href="#game-page">game</a>
+        <a class="item" href="#contact-page">contact</a>
+        <a class="item" href="#">tarief</a>
+    </div>
 
-    
+    <!-- homepage (1/)-->
+    <section class="home">
+        <h1 class="homepagetekst">
+            Het nationaal video game museum van Zoetermeer 
+            is de plek waar je moet zijn als je meer wilt 
+            weten en wilt meemaken van games, 
+            en meer wilt leren over de geschiedenis. 
+            Ook kun je hier de games van de toekomst ervaren, 
+            geschikt voor gamers van jong tot oud  
+        </h1>
+    </section>  
 
-    <h1>
-        Lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula
-        eget dolor. Aenean massa. Cum sociis
-        natoque penatibus et magnis dis parturient
-        montes, nascetur    
-    </h1>
-    <figure class="menu">
-        <div>
-            <figure class="items">
-                <h2 class="ItemTekst">reviews</h2>
-                <div></div>
-            </figure>
-            <figure class="items">
-                <h2 class="ItemTekst">history</h2>
-                <div></div>
-            </figure>
-            <figure class="items">
-                <h2 class="ItemTekst">game</h2>
-                <div></div>
-            </figure>
-            <figure class="items">
-                <h2 class="ItemTekst">contact</h2>
-                <div></div>
-            </figure>
-            <figure class="items">
-                <h2 class="ItemTekst">tarief</h2>
-                <div></div>
-            </figure>
+    <!-- geschiedenis page (2/) -->
+    <section id="geschiedenis-page" class="geschiedenis">
+        <h1 class="geschiedenis_title">onze geschiedenis</h1>
+
+        <p class="geschiedenis_txt">Een garagebox in Den Haag is de plek waar het avontuur in 2008  begon,
+        met twee vrienden Hasan Tasdemir en Pascal Rappailles. 
+        De garagebox werd al snel te klein waarna ze uitweken naar een loods op een industrieterrein. 
+        Helaas was de loods niet verwarmd en moest midden in de winter alles worden overgebracht 
+        naar een leegstaand Ministerie van Landbouw. Toen ook dit pand leeggeruimd moest worden
+        werd de toenmalige collectie van 10 arcade videogames met wat reserveonderdelen opgeslagen in een oude showroom voor klassieke auto’s.
+        Omdat daar geen ruimte was om de kasten te renoveren of te bespelen werd uitgekeken naar passende ruimte.
+        
+        Die werd in 2011 gevonden aan de Cobaltstraat in Zoetermeer. 
+        Daar besloot Hasan om met 4 vrienden de locatie te huren en kon het 
+        avontuur groeien tot een eigen ontmoetingsplek om hun hobby uit te oefenen 
+        en lekker te ontspannen met een game.</p>
+    </section>
+
+    <!-- game page (3/) -->
+    <section id="game-page" class="game">
+        <h2 class="game-page_title"> HIER KAN JE ONZE GAME SPELEN</h2>
+        <div class="game_window"></div>
+    </section>
+
+    <!-- activiteiten page (4/) -->
+    <section class="activiteiten">
+        <h2 class="activiteiten-title">activiteiten</h2>
+        <p class="activiteiten-txt">
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. At est ex culpa, 
+            sed fugit unde maiores iste exercitationem 
+            ab sunt eum natus quae obcaecati aperiam 
+            fuga numquam! Molestiae, fuga iusto?
+        </p>
+    </section>
+
+    <!-- tickets page (5/) -->
+    <section class="tickets">
+        <a href="#" class="tickets-box">TICKETS</a>
+    </section>
+
+    <!-- contact & openingstijden-->
+    <section class="info-title">
+        <h1 class="info-title-txt">contact & openingstijden</h1>
+    </section>
+    <section id="contact-page" class="info">
+        <p class="contact-algemeen, contact">Algemene vragen: info@nationaalvideogamemuseum.nl</p>
+        <p class="contact-persoonlijk, contact">Persoonlijk: pers@nationaalvideogamemuseum.nl</p>
+        <p class="contact-zakelijk, contact">Zakelijk: zakelijk@nationaalvideogamemuseum.nl</p>
+        <div class="openingstijden">
+            <p class="openingstijden-title">openingstijden:</p>
+            <p class="ma">ma: gesloten</p>
+            <p class="di">di: gesloten</p>
+            <p class="wo">wo: 10:00 - 18:00</p>
+            <p class="do">do: 10:00 - 18:00</p>
+            <p class="vr">vr: 10:00 - 21:00</p>
+            <p class="za">za: 10:00 - 18:00</p>
+            <p class="zo">zo: 12:00 - 18:00</p>
         </div>
+<<<<<<< HEAD
     </figure>
     <canvas id="canvas" width="200px" height="200px"></canvas>
+=======
+    </section>
+
+>>>>>>> 074b76ab10a4fb536a65e05ddd2ea0c53d334dc1
 </body>
 </html>

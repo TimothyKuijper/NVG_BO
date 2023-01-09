@@ -16,7 +16,8 @@ export class GameRender
       g.fillRect(0, 0, canvas.clientWidth, canvas.clientHeight);
 
       g.fillStyle = "#1eca07";
-      g.fillRect(this.game.x, this.game.y, 10, 10);
+      let player = this.game.player;
+      g.fillRect(player.x, player.y, player.w, player.h);
 
   } 
 }

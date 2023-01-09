@@ -2,23 +2,19 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Couierr New', Courier, monospace;
-
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url("img/image1.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
+*::-webkit-scrollbar{
+    display: none;
 }
+
+/* menu balk */
 
 button{
     height: 75px;
-    width: 125px;
+    width: 150px;
     appearance: none;
     background-color: inherit;
     border: none;
@@ -26,40 +22,226 @@ button{
 }
 
 .logo{
-    height: 75px;
-    width: 125px;
+    padding: 5px;
+    padding-left: 10px;
+    height: 65px;
+    width: 110px;
     display: flex;
     position: fixed; top: 0; left: 0;
 }
 
-
-
-h1{
-    margin-left: 400px;
-    margin-right: 150px;
-    margin-bottom: 100px;
-    color: white;
+.logo:hover{
+    cursor: pointer;
 }
 
 .menu{
-    width: 250px;
-    height: 100vh;
+    position: sticky;
+    top: 0;
     background-color: #5E66CB;
+    overflow: hidden;
+    width: 100%;
+    height: 75px;
 }
 
-.items{
-    width: 150px;
-    height: 50px;
-    padding: 25px;
+.menu :not(.logo){
+    height: 65px;
+    float: right;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.menu a:hover{
+    background-color: #343a99;
+}
+
+.menu :not(a.item){
+    background-color: #5E66CB; 
+}
+
+button:hover{
+    background-color: none;
+}
+
+/* homepage */
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("img/homepagebackground.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+
+}
+
+.homepagetekst{
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+/* geschiedenis page */
+
+.geschiedenis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("img/geschiedenisbackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    flex-direction: column;
+}
+
+.geschiedenis_title{
+    color: white;
+    margin-top: 150px;
+    font-size: 48px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+.geschiedenis_txt{
+    margin: 200px;
+    margin-top: 40px;
+    color: white;
+    font-size: 26px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+/* game page */
+
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(img/game_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+.game-page_title{
+    color: white;
+    margin: 40px;
+    font-size: 48px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+.game_window{
+    height: 500px;
+    width: 800px;
+    background-color: black;
+}
+
+/* activiteiten page */
+
+.activiteiten{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(img/actieviteiten_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+.activiteiten-title{
+    color: white;
+    font-size: 48px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+.activiteiten-txt{
+    margin: 200px;
+    margin-top: 40px;
+    color: white;
+    font-size: 26px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+/* tickets page */
+
+.tickets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(img/tickets_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:  cover;
+}
+
+.tickets-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
     background-color: white;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 30px;
-    margin-right:  30px;
-    border-radius: 17px;
-
+    border-radius: 60px;
+    font-size: 48px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.ItemTekst{
-    font-size: 40px;
+/* contact & openingstijden */
+
+.info-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #343a99;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover; 
 }
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    background-color: #5E66CB;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover; 
+    flex-wrap: wrap
+}
+
+.info-title-txt{
+    color: white;
+    font-size: 60px;
+}
+
+.contact{
+    color: white;
+    font-size: 26px;
+    width: 550px;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.openingstijden{
+    color: white;
+    font-size: 26px;
+}
+
