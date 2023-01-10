@@ -8,7 +8,7 @@ export class GameLogic
     }
     
     mouseMoved(event)
-    {wwwwww
+    {
         this.game.player.x = event.offsetX;
         this.game.player.y = event.offsetY;
     }
